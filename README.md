@@ -34,3 +34,6 @@ git branch -M main
 git remote add origin https://github.com/YOUR_USER/jleilaty-site.git
 git push -u origin main
 ```
+
+## Status
+- PR test OK.
