@@ -5,7 +5,6 @@ import Login from './pages/Login.jsx'
 import Register from './pages/Register.jsx'
 import Reset from './pages/Reset.jsx'
 import Consultations from './pages/Consultations.jsx'
-import ProtectedRoute from './pages/ProtectedRoute.jsx'
 
 export default function App() {
   return (
@@ -16,11 +15,8 @@ export default function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/reset" element={<Reset />} />
-          <Route path="/consultations" element={
-            <ProtectedRoute>
-              <Consultations />
-            </ProtectedRoute>
-          } />
+          {/* Public page; requires sign-in only on submit */}
+          <Route path="/consultations" element={<Consultations />} />
         </Routes>
       </AuthProvider>
     </BrowserRouter>
