@@ -3,7 +3,7 @@ import { useAuth } from "../contexts/AuthContext.jsx"
 import { db } from "../firebase"
 import { collection, onSnapshot, orderBy, query } from "firebase/firestore"
 
-const ADMIN_EMAILS = ["info@jleilatygroup.com"] // عدّلها لإيميلك
+const ADMIN_EMAILS = ["mohamadjleilaty@gmail.com"] // عدّلها لإيميلك
 
 export default function AdminConsultations() {
   const { user } = useAuth()
